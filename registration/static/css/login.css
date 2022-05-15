@@ -1,5 +1,30 @@
- .bg_image{
-background-image: url("../images/abchospital.jpg");
-background: fixed 50% 0 no-repeat;
+body { 
+    background: url("../images/bg_image.jpg") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
 
+#myform{
+    text-align: center;
+    /* font-size: medium; */
+    background-color: white;
+    border-radius: 10px;
+    border-color: #316b89 ;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+    height: 360px; width: 320px; 
+    left: 300px;
+    top: 100px;
+    position: relative;
+    padding-top: 50px;
+    
 }
+
+.bgi_color{
+    /* background-color: #6667AB; */
+    background-color:  #316b89;
+    color: #e9ebf0;
+}
+
+
