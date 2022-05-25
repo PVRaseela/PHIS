@@ -1,0 +1,72 @@
+{% extends 'template.html' %}
+{% load static %}
+{% block content %}
+
+        <form class=" appform" get>
+            <div class="form-row">
+                
+                <div class="form-group col-md-4">
+                    <!-- <label for="inputState">State</label> -->
+                    <select id="inputState" class="form-control">
+                        <option selected>Unit</option>
+                        <option>Unit-1</option>
+                        <option>Unit-2</option>
+                        
+                    </select>
+                </div>
+                <div class="form-group col-md-4">
+                    <!-- <label for="inputState">State</label> -->
+                    <select id="inputState" class="form-control">
+                        <option selected>Department</option>
+                        <option>General Medicine</option>
+                        <option>Obstetrics &Gynaecology</option>
+                        <option>ENT</option>
+                        <option>OrthoPeadics</option>
+                        <option>Gasterology</option>
+                    </select>
+                </div>
+                <div class="form-group col-md-4">
+                    <!-- <label for="inputState">State</label> -->
+                    <select id="inputState" class="form-control">
+                        <option selected>Consultant</option>
+                        <option>Dr. Shyam</option>
+                        
+                    </select>
+            </div>
+            <div class="form-row">   
+                <div class="form-group col-md-4">
+                    <!-- <label for="inputState">State</label> -->
+                    <select id="visitType" class="form-control">
+                        <option selected>Visit Type</option>
+                        <option>New Registration</option>
+                        <option>Follow Up</option>
+                        <option>Re-visit</option>
+                        
+                    </select>
+                </div>
+                <div class="form-group col-md-4">
+                    <!-- <label for="inputState">State</label> -->
+                    <select id="appStatus" class="form-control">
+                        <option selected>Appointment Status</option>
+                        <option>Booked</option>
+                        <option>Confirmed</option>
+                        
+                    </select>
+                </div>
+            
+                <div class="form-group col-md-4">
+                    <input type="date" name="" id="">
+                </div> 
+             
+            
+                
+                <button type="button" class="btn btn-md bgi_color form-group" id="checkappointBtnId" onclick="window.Location='#calender',viewCalender()">Check for Appointment</button>
+            </div>
+        </form>
+
+        <div id="calender" style="display:hidden"></div>
+        
+    </div>
+
+{% endblock %}
+

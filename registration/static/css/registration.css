@@ -1,0 +1,23 @@
+.custom_border{
+border-color: #1d6d86;
+border-radius: 50px;
+}
+.container-fluid { 
+    background-color: #e9ebf0;
+    height: 100%;
+}
+.topnav-right {
+    float: right;
+  }
+  .bgi_color{
+    background-color: #1d6d86 !important;
+    color: #ffffff !important;
+}
+.regform{
+    caret-color: transparent;
+    margin: 10px;
+}
+.appform{
+    caret-color: transparent;
+    margin: 10px;
+}

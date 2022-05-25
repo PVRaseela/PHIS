@@ -1,3 +1,48 @@
 
-
+.column-4 {
+    float: left;
+    width: 150px;
+    padding: 10px;
+    margin:20px;
+    height: 150px;
+    border-radius: 25px;
+  }
   
+  .project-text {
+    text-align:center;
+    font-size:15px;
+    
+  }
+  
+  .container-fluid { 
+    background-color: #e9ebf0;
+  
+}
+
+.bgi_color{
+    background-color: #1d6d86;
+    color: #ffffff;
+}
+.topnav-right {
+    float: right;
+  }
+  .icon{
+      height: 100px;
+      width: 100px;
+      text-align: center;
+     
+  }
+  .icon_margin{
+    height: 200px;
+    width: 200px;
+    text-align: center; 
+  }
+  a{
+      text-decoration: none;
+      color: white;
+  }
+  a:hover {
+    text-decoration: none;
+    color: #ffffff;
+  }
+ 

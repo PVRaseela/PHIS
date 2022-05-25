@@ -1,0 +1,175 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="{% static 'images\favicon-32x32.png' %}" type="image/x-icon">
+
+    <title>PeopleCare Hospitals-Patient Login</title>
+    <link rel="stylesheet" href="{% static 'css\registration.css' %}">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+</head>
+
+<body>
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-light bgi_color">
+            <img src="{% static 'images/PeoplecareHospitals-logo.png' %}" width="200" height="50" alt="" class="pl-10">
+
+            <a class="navbar-brand px-3 text-white" href="#">PeopleCare Hospitals</a>
+            
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+            </div>
+            <div class="topnav-right">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <h6>Welcome Back, Haritha</h6>
+                        </li>
+                        <li class="nav-item dropdown ">
+                            <a class="nav-link dropdown-toggle text-white p-0 pl-5" href="#" id="navbarDropdown"
+                                role="button" data-toggle="dropdown" aria-expanded="false">
+                                Settings
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Change Password</a>
+                                <a class="dropdown-item" href="#">View Profile</a>
+
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+
+        </nav>
+
+
+
+        <div class="card custom_border my-3 rounded" style="max-width: 50rem;">
+            <div class="card-header bgi_color">
+                <nav class="navbar navbar-expand-lg navbar-light bgi_color rounded py-0 m-0">
+                    <!-- <img src="{% static 'images/regicon.png' %}" width="40" height="40" alt="" class="pl-10"> -->
+        
+                    <a class="navbar-brand  text-white py-0" href="#">Registration</a>
+                    
+                    <div class="collapse navbar-collapse py-0" id="navbarSupportedContent">        
+                    </div>
+
+                    <div class="topnav-right py-0">
+                        <div class="collapse navbar-collapse py-0" id="navbarSupportedContent">
+                            <ul class="navbar-nav mr-auto py-0">
+
+                                <li class="nav-item dropdown py-0 ">
+                                    <a class="nav-link dropdown-toggle text-white py-0 pl-5" href="#" id="navbarDropdown"
+                                        role="button" data-toggle="dropdown" aria-expanded="false">
+                                        Registration Type
+                                    </a>
+                                    <div class="dropdown-menu py-0" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="#">General Registration</a>
+                                        <a class="dropdown-item" href="#">Emergency Registration</a>
+                                        <a class="dropdown-item" href="#">Staff Registration</a>
+                                        <a class="dropdown-item" href="#">Staff Dependent Registration</a>
+
+                                    </div>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+
+                </nav>
+            </div>
+        
+                <form class=" regform">
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <input type="text" class="form-control" id="inputName" placeholder="Patient First Name"
+                                aria-required="true" aria-invalid="true">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <input type="text" class="form-control" id="inputlastname" placeholder="Last name">
+                        </div>
+                        <div class="form-group col-md-4">
+                            <!-- <label for="inputState">State</label> -->
+                            <select id="inputGender" class="form-control" >
+                                <option selected>Gender</option>
+                                <option>Male</option>
+                                <option>Female</option>
+                               
+                            </select>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <input type="tel" class="form-control" id="inputPassword4" placeholder="Phone No.">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="inputAddress" placeholder="Address">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="inputAddress2"
+                            placeholder="Apartment, studio, or floor">
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            
+                            <input type="text" class="form-control" id="inputCity" placeholder="City">
+                        </div>
+                        <div class="form-group col-md-4">
+                            <!-- <label for="inputState">State</label> -->
+                            <select id="inputState" class="form-control">
+                                <option selected>State</option>
+                                <option>Kerala</option>
+                                <option>Tamil Nadu</option>
+                                <option>Karnataka</option>
+                                <option>Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-2">
+                            <!-- <label for="inputZip">Zip</label> -->
+                            <input type="text" class="form-control" id="inputZip" placeholder="Zip code">
+                        </div>
+                    </div>
+                   
+                    <button type="button" class="btn btn-md bgi_color" onclick="patientReg()"  id="saveBtnId">Register</button>
+                    <button type="button" class="btn btn-md bgi_color" id="editBtnId" style="visibility: hidden ;">Update</button>
+                    <button type="button" class="btn btn-md bgi_color" id="appointBtnId" style="visibility: hidden ;" onclick="window.location='appointment.html'">Check for Appointment</button>
+
+                </form>
+            </div>
+
+        </div>
+
+        <script>
+            function patientReg(){
+              
+
+                document.getElementById("saveBtnId").style.visibility="hidden";
+                document.getElementById("saveBtnId").style.display="none";
+                document.getElementById("editBtnId").style.visibility="visible";
+                document.getElementById("appointBtnId").style.visibility="visible";
+                var val = 'PCH'+ Math.floor(1000 + Math.random() * 9000);
+
+                alert("Patient Registered Successfully with PRN No. "+val);
+            }
+           
+
+            
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>

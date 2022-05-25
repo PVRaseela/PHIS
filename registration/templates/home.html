@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PeopleCare Hospitals-Patient Login</title>
 
-    <link rel="shortcut icon" href="images\favicon-32x32.png" type="image/x-icon">
+    <link rel="shortcut icon" href="{% static 'images\favicon-32x32.png'%}" type="image/x-icon">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
 
@@ -21,8 +21,9 @@
 <body>
     <div class="container-fluid">
         <nav class="navbar navbar-expand-lg navbar-light bgi_color">
-            <img src="images/PeoplecareHospitals-logo.png" width="200" height="50" alt="" class="pl-10">
-  </a>
+            <img src="{% static 'images/PeoplecareHospitals-logo.png' %}" 
+            width="200" height="50" alt="" class="pl-10">
+           
             <a class="navbar-brand px-3 text-white" href="#">PeopleCare Hospitals</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
@@ -38,7 +39,7 @@
                             <h6>Welcome Back, Haritha</h6>
                         </li>
                         <li class="nav-item dropdown ">
-                            <a class="nav-link dropdown-toggle text-white p-0 pl-3" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle text-white p-0 pl-5" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
                             Settings
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -53,37 +54,42 @@
             </div>
             
           </nav>
+
          <center><section>
             
             <div style="height: 100px;width: 100px;color: white;"></div>
 
             
             <div class="column-4 bgi_color">
-                <center><img  class="icon" src="images/icon/registration.jpeg" alt=""></center>
-              <h6 class="project-text">Registration</h6>
+              <a href="http://127.0.0.1:8000/phis/registration">
+                <center><img  class="icon" src="{% static 'images/icon/registration.jpeg' %}" alt="">
+                </center>
+                <h6 class="project-text">Registration</h6>
+              </a>
             </div>
-            <div class="column-4 bgi_color">
-                <center><img  class="icon" src="images/icon/appointment.jpeg" alt=""></center>
-              <h6 class="project-text">Appointment</h6>
+            <div class="column-4 bgi_color ">
+              <a href="#">
+                <center><img  class="icon" src="{% static 'images/icon/appointment.jpeg' %}" alt=""></center>
+                <h6 class="project-text">Appointment</h6>
+             </a>
             </div>
             <div class="column-4 bgi_color">
               <a href="#">
-                <center><img  class="icon" src="images/icon/doctorspanel.jpeg" alt=""></center>
-              <h6 class="project-text">Doctor's Panel</h6>
-            </a>
+                <center><img  class="icon" src="{% static 'images/icon/doctorspanel.jpeg' %}" alt=""></center>
+                <h6 class="project-text">Doctor's Panel</h6>
+              </a>
             </div>
             <div class="column-4 bgi_color">
-                <center><img  class="icon" src="images/icon/nursepanel.jpeg" alt=""></center>
-              <h6 class="project-text">Nurse's Panel</h6>
+              <a href="#">
+                <center><img  class="icon" src="{% static 'images/icon/nursepanel.jpeg' %}" alt=""></center>
+                <h6 class="project-text">Nurse's Panel</h6>
+              </a>
             </div>
             <div class="column-4 bgi_color">
-                <center><img  class="icon" src="images/icon/administration.jpeg" alt=""></center>
-              <h6 class="project-text">Administration</h6>
-            </div>
-            
-         
-            
-            <div class="column-4 project-8">
+              <a href="#">
+                <center><img  class="icon" src="{% static 'images/icon/administration.jpeg' %}" alt=""></center>
+                <h6 class="project-text">Administration</h6>
+              </a>
             </div>
          </section></center>
     </div>

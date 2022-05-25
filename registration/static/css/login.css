@@ -11,7 +11,7 @@ body {
     /* font-size: medium; */
     background-color: white;
     border-radius: 10px;
-    border-color: #316b89 ;
+    border-color: #1d6d86 ;
     box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
     height: 360px; width: 320px; 
     left: 300px;
@@ -23,7 +23,7 @@ body {
 
 .bgi_color{
     /* background-color: #6667AB; */
-    background-color:  #316b89;
+    background-color:  #1d6d86;
     color: #e9ebf0;
 }
 
