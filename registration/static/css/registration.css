@@ -21,3 +21,13 @@ border-radius: 50px;
     caret-color: transparent;
     margin: 10px;
 }
+.customBtn{
+height: 50px;
+width: 80px;
+margin-bottom: 1px;
+}
+
+.bgi_subColor{
+  background-color: #4492aa !important;
+  color: #ffffff !important;
+}
